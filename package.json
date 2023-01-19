@@ -1,7 +1,7 @@
 {
   "name": "genesis-test-task",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/genesis-test-task",
+  "homepage": "https://olegtsizdyn.github.io/genesis-test-task",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
