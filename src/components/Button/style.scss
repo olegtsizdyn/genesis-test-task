@@ -1,0 +1,36 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media.scss";
+
+button{
+  width: 296px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 21px 24px;
+  background: $orange-100;
+  border-radius: 12px;
+  cursor: pointer;
+
+  p{
+    color: $white-100;
+    font-weight: 600;
+    margin: 0px;
+  }
+
+  &:hover{
+    background: $orange-80;
+  }
+
+  &:active{
+    background: $orange-120;
+  }
+
+  @include from-desktop-to-mobile {
+    font-size: 14px;
+    width: 288px;
+    height: 48px;
+    padding: 16px 24px;
+  }
+}
