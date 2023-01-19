@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/genesis-test-task/static/css/main.95585fb9.css",
-    "main.js": "/genesis-test-task/static/js/main.196cba0d.js",
+    "main.js": "/genesis-test-task/static/js/main.c1c392cd.js",
     "static/media/hand-icon.svg": "/genesis-test-task/static/media/hand-icon.ae778be2545d339186d7f27827d5ba72.svg",
     "index.html": "/genesis-test-task/index.html",
     "static/media/cross-icon.svg": "/genesis-test-task/static/media/cross-icon.46c988ed96b5dff532f35b64d057e9c3.svg",
     "static/media/burger-icon.svg": "/genesis-test-task/static/media/burger-icon.4cc3cba447218668ce9e22ca3a4cea9b.svg",
     "main.95585fb9.css.map": "/genesis-test-task/static/css/main.95585fb9.css.map",
-    "main.196cba0d.js.map": "/genesis-test-task/static/js/main.196cba0d.js.map"
+    "main.c1c392cd.js.map": "/genesis-test-task/static/js/main.c1c392cd.js.map"
   },
   "entrypoints": [
     "static/css/main.95585fb9.css",
-    "static/js/main.196cba0d.js"
+    "static/js/main.c1c392cd.js"
   ]
 }
