@@ -47,6 +47,15 @@
       }
     }
 
+    &--game-over{
+      label{
+        font-weight: 600;
+        font-size: 32px;
+        opacity: 0.5;
+        color: $black-100;
+      }
+    }
+
     h1{
       width: 100%;
       font-weight: 600;

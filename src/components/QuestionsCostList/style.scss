@@ -1,0 +1,67 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media.scss";
+
+ul{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  .item{
+    min-width: 376px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:first-child){
+      margin-bottom: 8px;
+    }
+
+    .rectangle{
+      width: 240px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+      border: 1px solid $black-40;
+    }
+
+    hr{
+      margin: 0px;
+      height: 1px;
+      width: 70px;
+      border: none;
+      background: $black-40;
+    }
+
+    &--inactive{
+      .rectangle{
+        border: 1px solid $black-40;
+      }
+
+      hr{
+        background: $black-40;
+      }
+    }
+
+    &--active{
+      .rectangle{
+        border: 1px solid $orange-100;
+      }
+
+      hr{
+        background: $orange-100;
+      }
+    }
+
+    &--completed{
+      .rectangle{
+        color: $black-40;
+      }
+    }
+  }
+}

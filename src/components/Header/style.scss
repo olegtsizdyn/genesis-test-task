@@ -1,0 +1,17 @@
+.header-container{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 21px;
+  box-sizing: border-box;
+  position: fixed;
+  display: none;
+
+  button{
+    border: none;
+    background: none;
+    padding: 0px;
+  }
+}

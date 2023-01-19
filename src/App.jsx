@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 import Game from './pages/Game';
-import GameOver from './pages/GameOver';
 import Welcome from './pages/Welcome';
 
 const App = () => {
@@ -21,7 +20,7 @@ const App = () => {
         <Route
           exact
           path="game-over" 
-          element={ <GameOver /> } 
+          element={ <Welcome /> } 
         />
 
         <Route

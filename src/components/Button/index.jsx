@@ -9,7 +9,10 @@ const Button = (props) => {
   } = props;
 
   return (
-    <button onClick={onClick}>
+    <button 
+      className='primary-button'
+      onClick={onClick}
+    >
       <p>{text}</p>
     </button>
   );

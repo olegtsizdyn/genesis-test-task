@@ -1,12 +1,11 @@
 import {
   SET_TOTAL_SCORE,
+  SET_IS_GAME_OVER
 } from './actions';
 
-import questions from '../configs/questions.json';
-
 const INIT_STATE = {
-  questions: questions,
   totalScore: 0,
+  isGameOver: false
 };
 
 const game = (state = INIT_STATE, action) => {
@@ -15,6 +14,11 @@ const game = (state = INIT_STATE, action) => {
       return {
         ...state,
         totalScore: action.payload,
+      }
+    case SET_IS_GAME_OVER:
+      return {
+        ...state,
+        isGameOver: action.payload,
       }
     default:
       return state

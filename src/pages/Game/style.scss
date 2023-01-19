@@ -1,0 +1,35 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media.scss";
+
+.game-page-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .game{
+    &-board{
+      width: 100%;
+      padding: 122px 96px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &--text{
+        font-weight: 600;
+        font-size: 32px;
+        color: $black-100;
+      }
+    }
+
+    &-questions{
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $white-100;
+    }
+  }
+}

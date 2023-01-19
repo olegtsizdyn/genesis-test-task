@@ -1,1 +1,2 @@
 export const SET_TOTAL_SCORE = 'SET_TOTAL_SCORE';
+export const SET_IS_GAME_OVER = 'SET_IS_GAME_OVER';

@@ -198,6 +198,11 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  cursor: pointer;
+}
+
+ol, ul {
+  list-style: none;
 }
 
 /**
