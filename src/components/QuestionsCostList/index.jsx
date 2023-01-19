@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { QUESTION_STATUS } from "../../static/enum";
+import { currencyFormatter } from '../../utils';
 
 import "./style.scss";
 
@@ -21,7 +22,7 @@ const QuestionsCostList = (props) => {
           }`}
         >
           <hr />
-          <div className="rectangle">{"$" + item.cost}</div>
+          <div className="rectangle">{"$" + currencyFormatter(item.cost)}</div>
           <hr />
         </li>
       ))}

@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 
 import { ReactComponent as HandIcon } from '../../assets/icons/hand-icon.svg';
 
+import { currencyFormatter } from '../../utils';
+
 import Button from '../../components/Button';
 
 import './style.scss';
@@ -32,7 +34,7 @@ const Welcome = () => {
           ? <div className='block--game-over'>
               <label>Total score:</label>
               <h1>
-                ${totalScore} earned
+                ${currencyFormatter(totalScore)} earned
               </h1>
             </div>
           : <h1>

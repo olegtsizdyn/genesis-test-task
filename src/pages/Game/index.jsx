@@ -4,17 +4,17 @@ import { useNavigate } from "react-router-dom";
 
 import { SET_IS_GAME_OVER, SET_TOTAL_SCORE } from "../../redux/game/actions";
 
+import { QUESTION_STATUS } from "../../static/enum";
+
 import QuestionsOptionsList from "../../components/QuestionsOptionsList";
 import QuestionsCostList from "../../components/QuestionsCostList";
 import Header from "../../components/Header";
 
 import jsonQuestions from "../../configs/questions.json";
-import { QUESTION_STATUS } from "../../static/enum";
 
 import "./style.scss";
 
 const Game = () => {
-  const { totalScore } = useSelector((state) => state.game);
   const { isSideBarOpen } = useSelector((state) => state.app);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -58,7 +58,7 @@ const Game = () => {
 
       dispatch({
         type: SET_TOTAL_SCORE,
-        payload: totalScore + newQuestions[index].cost,
+        payload: newQuestions[index].cost,
       })
 
       setQuestions(newQuestions);
