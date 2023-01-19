@@ -1,0 +1,1 @@
+export const SET_SIDE_BAR_OPEN = 'SET_SIDE_BAR_OPEN';

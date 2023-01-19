@@ -1,7 +1,9 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media.scss";
+
 .header-container{
   width: 100vw;
   height: fit-content;
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 21px;
@@ -13,5 +15,15 @@
     border: none;
     background: none;
     padding: 0px;
+  }
+
+  @include tablet {
+    display: flex;
+    z-index: 99999;
+  }
+
+  @include mobile {
+    display: flex;
+    z-index: 99999;
   }
 }

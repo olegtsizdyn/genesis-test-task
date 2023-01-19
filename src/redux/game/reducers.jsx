@@ -5,7 +5,7 @@ import {
 
 const INIT_STATE = {
   totalScore: 0,
-  isGameOver: false
+  isGameOver: false,
 };
 
 const game = (state = INIT_STATE, action) => {

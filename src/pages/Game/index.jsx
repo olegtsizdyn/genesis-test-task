@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
-import { SET_IS_GAME_OVER, SET_TOTAL_SCORE } from "../../redux/actions";
+import { SET_IS_GAME_OVER, SET_TOTAL_SCORE } from "../../redux/game/actions";
 
 import QuestionsOptionsList from "../../components/QuestionsOptionsList";
 import QuestionsCostList from "../../components/QuestionsCostList";
@@ -15,6 +15,7 @@ import "./style.scss";
 
 const Game = () => {
   const { totalScore } = useSelector((state) => state.game);
+  const { isSideBarOpen } = useSelector((state) => state.app);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -77,16 +78,16 @@ const Game = () => {
 
   return questions.length ? (
     <div className="game-page-container">
-      {/* <Header /> */}
+      <Header />
       <div className="game-board">
         <p className="game-board--text">{questions.find(item => item.status === QUESTION_STATUS.ACTIVE).question}</p>
-        <QuestionsOptionsList 
+        <QuestionsOptionsList
           questions={questions}
           onOptionClickHandler={onOptionClickHandler}
         />
       </div>
-      <div className="game-questions">
-        <QuestionsCostList 
+      <div className={`game-questions ${isSideBarOpen ? 'game-questions--open' : ''}`}>
+        <QuestionsCostList
           questions={questions} 
         />
       </div>

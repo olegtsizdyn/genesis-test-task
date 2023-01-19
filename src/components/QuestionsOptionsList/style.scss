@@ -45,6 +45,21 @@
         margin-right: 8px;
         color: $orange-100;
       }
+
+      @include mobile{
+        max-width: 250px;
+        height: 50px;
+      }
+
+      @include tablet{
+        max-width: 100%;
+        height: 50px;
+      }
+
+      @include laptop {
+        max-width: 100%;
+        height: 50px;
+      }
     }
 
     &:hover{
@@ -56,5 +71,28 @@
         background: $orange-100;
       }
     }
+
+    @include mobile{
+      margin-top: 8px;
+    }
+
+    @include tablet {
+      margin-top: 8px;
+    }
+  }
+
+  @include mobile {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  @include tablet {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  @include laptop {
+    justify-content: center;
+    max-width: 100%;
   }
 }

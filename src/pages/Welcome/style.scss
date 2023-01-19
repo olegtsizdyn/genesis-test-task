@@ -38,7 +38,7 @@
 
       @include mobile {
         margin-bottom: 0;
-        justify-content: center;
+        justify-content: center!important;
 
         svg{
           width: 196.86px;
@@ -53,6 +53,42 @@
         font-size: 32px;
         opacity: 0.5;
         color: $black-100;
+
+        @include from-desktop-to-mobile {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+
+        @include mobile {
+          font-size: 18px;
+        }
+
+        @include tablet {
+          font-size: 18px;
+        }
+      }
+
+      h1{
+        @include mobile {
+          margin-top: 8px !important;
+        }
+
+        @include tablet {
+          margin-top: 8px !important;
+        }
+      }
+
+      @include from-desktop-to-mobile {
+        width: 100%;
+      }
+
+      @include tablet {
+        margin-top: 50px;
+      }
+
+      @include mobile {
+        margin-top: 50px;
       }
     }
 
